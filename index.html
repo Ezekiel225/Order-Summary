@@ -1,42 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Frontend Mentor | Order summary card</title>
 
-    <link rel="stylesheet" href="css/style.css">
-    
-    
+    <link rel="stylesheet" href="css/style.css"> 
 
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
-    <img class="background" src="images/pattern-background-desktop.svg" alt="background">
-    <div class="container-block">
-        <img class="hero" src="images/illustration-hero.svg" alt="hero">
-        <h2 class="order-summary">Order Summary</h2>
-        <p>You can now listen to millions of songs, <span>audiobooks, and podcasts on any device </span><span>anywhere you like!</span></p>
-        
-        
-        <div class="btn-icon">
-
-            <table cellspacing="20 10 10 10">
-                <tr>
-                    <td><img class="music" src="images/icon-music.svg" alt="music"></td>
-                    <td><span><span class="annual">Annual Plan</span> $59.99/year</span></td>
-                    <td><a class="change" href="">Change</a></td>
-                </tr>
-            </table>                        
-                        
+    <div class="container">
+        <div>
+            <img class="hero" src="images/illustration-hero.svg" alt="hero">
         </div>
+        <div>
+            <h2 class="heading">Order Summary</h2>
+            <p class="paragraph">You can now listen to millions of songs, <span>audiobooks, and podcasts on any device </span><span>anywhere you like!</span></p>
             
-        <a class="btn" href="">Proceed to Payment</a>
-        <div class="cancel">
-            <a class="order" href="#"><h3>Cancel Order</h3></a>
+            <div class="cont">
+                <div class="fior">
+                    <div class="column1">
+                        <img class="icon" src="images/icon-music.svg" alt="">
+                    </div>
+                    <div class="column2 sec-col">
+                        <P class="text">Annual Plan</P>
+                        <P class="price">$66.99</P>
+                    </div>
+                    <div class="column3">
+                        <a class="sec-text" href="#"><p>change</p></a>
+                    </div>
+                </div>
+            </div>
+                
+            <div>
+                <a class="btn" href="#">Proceed to Payment</a>
+            </div>
+            <div class="cancel">
+                <a class="order" href="#"><h4>Cancel Order</h4></a>
+            </div>
         </div>
 
     </div>
