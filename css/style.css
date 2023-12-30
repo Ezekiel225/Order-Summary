@@ -1,73 +1,110 @@
 body {
-    background-color: hsl(225, 100%, 94%);
     font-size: 16px;
     display: flex;
     justify-content: center;
     text-align: center;
-    font-family: Hanken Grotesk;
+    font-family: 'Red Hat Display', sans-serif;
     color: hsl(224, 23%, 55%);
-    height: 140vh;
+    min-height: 100vh;
+    align-items: center;
+    background: url(../images/pattern-background-desktop.svg) no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    font-weight: 500;
 }
 
-a {
-    text-decoration: none;
-    color: hsl(224, 23%, 55%);
-}
-
-.container-block {
-    width: 35%;
+.container {
+    width: 24rem;
+    display: grid;
+    grid-template-rows: 33% 50%;
+    background-color: white;
     border-radius: 1rem;
-    position: absolute;
-    background-color:  #fff;
-    height: 630px;
-    margin-top: 20px;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
 }
 
-.btn-icon {
-    background-color: hsl(225, 100%, 98%);
+.cont {
+    padding: 2% 10%;
+}
+
+.fior {
+    display: flex;
     border-radius: 1rem;
-    margin: 20px 30px 40px 30px;
+    background: hsl(225, 100%, 98%);
 }
 
-.cancel {
-    margin-top: 25px;
+.column1 {
+    padding: 0 5%;
+}
+
+.column2 {
+    padding: 0 18% 0 0;
+}
+
+.cancel {   
+    margin: 30px 0 40px 0;
 }
 
 .hero {
     width: 100%;
     border-radius: 1rem 1rem 0 0;
-    height: 220px;
 }
 
-.background {
-    width: 120%;
-    height: 19.5rem;
-    position: relative;
-    bottom: 20px;
+.sec-col {
+    text-align: left;
 }
 
-.order-summary {
-    color: hsl(223, 47%, 23%);
+.sec-text {
+    color: hsl(245, 75%, 52%);
+}
+
+.sec-text:hover {
+    color: hsl(245, 94%, 66%);
+    text-decoration: none;
+}
+
+.order {
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+    font-weight: 700 !important;
 }
 
 .order:hover {
     color: hsl(223, 47%, 23%);
 }
 
-.annual {
-    color: hsl(223, 47%, 23%);
-    font-weight: 700;
+.icon {
+    margin-top: 16px;
 }
 
-.change {
-    margin-left: 20px;
+.heading {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+.paragraph {
+    padding: 0 5% 0 5%;
+}
+
+.text {
+    color: hsl(223, 47%, 23%);
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.price {
+    margin-top: 0;
 }
 
 .btn {
-    display: inline-block;
+    margin-top: 20px;
+    color: #f8f9fa;
     background-color: hsl(245, 75%, 52%);
-    color: #fff;
-    font-weight: 400;
+    box-shadow: 0 0 5px 0  hsl(245, 75%, 52%);
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 500;
     text-align: center;
     white-space: nowrap;
     vertical-align: middle;
@@ -75,14 +112,15 @@ a {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    border: 1px solid transparent;
-    padding: 0.375rem 4.5rem;
+    padding: 0.6rem 4.9rem;
     font-size: 1rem;
     line-height: 1.5;
-    border-radius: 0.7rem;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    border-radius: 1rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 .btn:hover {
-    background-color: hsl(224, 67%, 63%);
+    background: hsl(245, 94%, 66%);
 }
+
+
